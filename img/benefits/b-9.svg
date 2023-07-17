@@ -1,0 +1,14 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Sun">
+<path id="Squircle" d="M18.6429 40.0165C18.5511 48.5047 19.9448 53.677 23.0645 56.7968C26.189 59.9213 31.4135 61.3574 40.0002 61.3574C48.5863 61.3574 53.7619 59.9214 56.8628 56.8002C59.966 53.6767 61.3573 48.4986 61.3573 40.0003C61.3573 31.502 59.966 26.3238 56.8628 23.2003C53.7619 20.0791 48.5863 18.6431 40.0002 18.6431C31.4146 18.6431 26.2879 20.079 23.2106 23.1968C20.1239 26.3242 18.735 31.508 18.6429 40.0165Z" stroke="#3186EE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Squircle_2" d="M38.0005 40.0108C37.9889 41.0804 38.178 41.469 38.3456 41.6367C38.5164 41.8075 38.9149 42 40.0003 42C41.0853 42 41.4761 41.8075 41.6435 41.639C41.8125 41.4689 42 41.0763 42 40C42 38.9237 41.8125 38.5311 41.6435 38.361C41.4761 38.1925 41.0853 38 40.0003 38C38.9157 38 38.5327 38.1924 38.3685 38.3587C38.1981 38.5314 38.0122 38.9278 38.0005 40.0108Z" fill="#1C2F47" stroke="#1C2F47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector 65" d="M40 2.85742V8.57171" stroke="#3186EE" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 66" d="M40 71.4287V77.143" stroke="#3186EE" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 67" d="M77.1429 40L71.4286 40" stroke="#3186EE" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 68" d="M8.57141 40L2.85713 40" stroke="#3186EE" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 69" d="M11.4286 11.4287L15.4692 15.4693" stroke="#3186EE" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 71" d="M11.4286 69.7549L15.4692 65.7143" stroke="#3186EE" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 70" d="M69.7545 11.4287L65.7138 15.4693" stroke="#3186EE" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 72" d="M69.7545 69.7549L65.7138 65.7143" stroke="#3186EE" stroke-width="3" stroke-linecap="round"/>
+</g>
+</svg>
