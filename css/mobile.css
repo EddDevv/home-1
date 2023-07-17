@@ -201,7 +201,7 @@
   } 
 
   .subcatalog_active {
-    margin-top: 40px !important;
+    margin-top: 70px !important;
   }
   
 
@@ -618,5 +618,21 @@
   .benefits__item img {
     width: 60px;
     height: 60px;
+  }
+  .address__location-link, .form-search__categories-btn, .contacts__mail {
+    font-size: 14px;
+  }
+  .collection__tabs {
+    justify-content: flex-start;
+  }
+  .news__img {
+    height: 280px;
+    min-height: 280px;
+  }
+  .nav-bottom__link_catalog {
+    font-size: 20px;
+  }
+  .footer__personal {
+    font-size: 18px;
   }
 }
