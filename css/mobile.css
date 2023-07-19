@@ -97,7 +97,7 @@
 	}
   .collection__category {
     padding: 12px 30px;
-    font-size: 16px;
+    font-size: var(--font-size-medium);
     transform: translateY(25px);
   }
   .collection__pagination {
@@ -212,7 +212,7 @@
   .header__top-link {
     color: var(--color-primary);
     font-size: var(--font-size-base);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
   }
 
   .header__center-body,
@@ -463,7 +463,7 @@
     background-color: transparent;
     color: #1C2F47;
     font-size: var(--font-size-base);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
   }
   .nav__bottom-item {
     margin-top: 21px;
@@ -533,7 +533,7 @@
     font-size: 20px;
   }
   .footer__link {
-    font-size: 18px;
+    font-size: var(--font-size-large);
   }
   .about__left-img {
     min-width: 75%;
@@ -607,20 +607,20 @@
 		margin-top: 40px;
 	}
   .news__time {
-    font-size: 12px;
+    font-size: var(--font-size-small);
   }
   .news__title {
-    font-size: 18px;
+    font-size: var(--font-size-large);
   }
   .news__read {
-    font-size: 14px;
+    font-size: var(--font-size-base)
   }
   .benefits__item img {
     width: 60px;
     height: 60px;
   }
   .address__location-link, .form-search__categories-btn, .contacts__mail {
-    font-size: 14px;
+    font-size: var(--font-size-base);
   }
   .collection__tabs {
     justify-content: flex-start;
@@ -633,6 +633,6 @@
     font-size: 20px;
   }
   .footer__personal {
-    font-size: 18px;
+    font-size: var(--font-size-large);
   }
 }

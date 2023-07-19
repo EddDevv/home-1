@@ -6,8 +6,6 @@
   --color-text: #1f2e40;
   --color-primary: #3186EE;
   --color-secondary: #606D7E;
-  --color-white: #fff;
-  --color-blue: #3186EE;
   --color-gray: #98B1D0;
   --color-drop-shadow: rgba(96, 109, 126, 0.13);
 }
@@ -122,7 +120,7 @@ body {
 }
 
 .header__top-link, .login__link, .card__price {
-  color: var(--color-white);
+  color: var(--color-background);
 }
 .header__top-link:after{
   content: "";
@@ -159,7 +157,7 @@ body {
   margin-top: -25px;
   margin-left: 8px;
   transform: translateY(3px);
-  background-color: var(--color-white);
+  background-color: var(--color-background);
 }
 
 .header__card {
@@ -286,16 +284,12 @@ body {
   align-items: center;
   padding: 8px 20px;
   border-radius: 8px;
-  color: var(--color-white);
-	background-color: var(--color-secondary);
+  color: var(--color-background);
+  background-color: var(--color-primary);
 }
 
 .nav-bottom__link:hover, .nav-bottom__link_catalog:hover {
   opacity: 0.8;
-}
-
-.nav-bottom__link_catalog {
-  background-color: var(--color-primary);
 }
 
 .nav__bottom-item {
@@ -355,18 +349,26 @@ body {
 	content: "";
 	min-width: 40px;
 	min-height: 40px;
-  z-index: 200;
+  z-index: 200 !important;
+}
+
+.banner .container {
+  position: relative !important;
+}
+
+.banner-slider .swiper-wrapper, .banner-slider {
+  position: static !important;
 }
 
 .banner-slider-button-next{
 	background-image: url('../img/a-r.svg');
 	background-repeat: no-repeat;
-  right: -20px !important;
+  right: -5px !important;
 }
 .banner-slider-button-prev{
 	background-image: url('../img/a-l.svg');
 	background-repeat: no-repeat;
-  left: -20px !important;
+  left: -5px !important;
 }
 .default-pagination {
 	display: flex;
@@ -445,7 +447,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background: var(--color-white);
+  background: var(--color-background);
   box-shadow: 0px 4px 4px var(--color-drop-shadow);
   flex: 0 1 23%;
   height: 180px;
@@ -607,7 +609,7 @@ body {
   display: flex;
   align-items: center;
   font-size: var(--font-size-xxlarge);
-  color: var(--color-white);
+  color: var(--color-background);
   transform: translateX(276px);
   max-width: 40%;
   line-height: 127.273%;
@@ -681,15 +683,18 @@ body {
 /*Catalog*/
 .catalog {
   position: absolute;
+  pointer-events: none;
 	width: 100%;
 	padding-top: 20px;
   z-index: 100;
   overflow-x: hidden;
-  display: none;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .catalog_active {
-  display: block;
+  pointer-events: painted;
+  opacity: 1;
 }
 
 .catalog__list {
@@ -752,8 +757,8 @@ body {
 	color: var(--color-background);
 	display: inline-flex;
 	align-items: center;
-	font-size: 14px;
-	font-weight: 500;
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-medium);
 	height: 40px;
 }
 .catalog__item-icon svg {
@@ -790,7 +795,7 @@ body {
 }
 
 .subcatalog__section-title {
-	font-weight: 600;
+	font-weight: var(--font-weight-semibold);
 }
 
 .subcatalog__section li {
@@ -798,11 +803,15 @@ body {
 }
 
 .subcatalog__title {
-	font-weight: 600;
-	color: var(--color-blue);
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-primary);
 }
 .subcatalog__link {
 	color: var(--color-secondary);
+  transition: 0;
+}
+.subcatalog__link:hover {
+  color: var(--color-primary);
 }
 
 .catalog__item:hover .subcatalog {
@@ -825,6 +834,7 @@ body {
 .news__img {
   min-height: 340px;
   height: 340px;
+  object-fit: contain;
 }
 
 .news__time {
@@ -836,7 +846,7 @@ body {
 .news__title {
   margin-top: 5px;
   font-size: var(--font-size-xlarge);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   color: var(--color-text);
   line-height: 133%;
 }
@@ -936,7 +946,7 @@ body {
   text-transform: uppercase;
 }
 .footer__work-title {
-  font-size: 18px;
+  font-size: var(--font-size-large);
   color: var(--color-background);
 }
 
@@ -952,7 +962,7 @@ body {
 .footer__phone {
   display: block;
   margin-top: 5px;
-  font-size: 16px;
+  font-size: var(--font-size-medium);
   color: var(--color-background);
 }
 
@@ -971,6 +981,7 @@ body {
   left: 20px;
   z-index: 400;
 }
+
 .close {
   right: 20px;
   width: 100%;
