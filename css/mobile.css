@@ -578,7 +578,7 @@
   }
 
   .form-search__categories {
-    width: 48%;
+    width: 50%;
   }
 
   .form-search__input {
@@ -590,6 +590,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    font-size: 12px;
   }
 
   .section {
