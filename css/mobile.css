@@ -176,7 +176,8 @@
   .catalog__item-title {
     padding-left: 0;
     width: 100%;
-    color: #1C2F47
+    color: #1C2F47;
+    border-radius: 8px;
   }
   .catalog__hr {
     width: 100%;
@@ -512,6 +513,15 @@
     order: 3;
     margin-top: 20px;
     flex: 0 1 50%;
+  }
+  .catalog__breadcrumbs.show-bread {
+    display: inline-flex !important;
+  }
+
+  .banner__btn {
+    font-size: var(--font-size-medium);
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
 }

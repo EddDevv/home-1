@@ -111,12 +111,19 @@
 						<input class="form-search__input" type="text" placeholder="Поиск...">
 						<div class="form-search__categories">
 							<button type="button" class="form-search__categories-btn" id="dropdown">
-								Все категории
+								<span>Все категории</span>
 								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M4 7L8 11L12 7" stroke="#3186EE" stroke-width="1.5" stroke-linecap="round"
 										stroke-linejoin="round" />
 								</svg>
 							</button>
+							<ul class="dropdown__categories">
+								<li>Плитки для кухни</li>
+								<li>Керамогранит</li>
+								<li>Напольная плитка</li>
+								<li>Плитка для ванной</li>
+								<li>Категория 5</li>
+							</ul>
 						</div>
 					</form>
 					<div class="header__contacts contacts">
@@ -206,192 +213,194 @@
 			</div>
 		</nav>
 
-		<nav class="catalog">
-			<ul class="catalog__list">
-				<div class="container catalog__list-wrapper">
-					<button class="catalog__breadcrumbs">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-							<path d="M11.25 15.5L6.25 10.5L11.25 5.5" stroke="#1C2F47" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-						</svg>
-						<span class="catalog__breadcrumbs-title"></span>
-					</button>
-					<button class="close" id="close-catalog">
-						<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M1.21094 16.6641C0.707031 17.1797 0.683594 18.0938 1.22266 18.6211C1.76172 19.1484 2.66406 19.1367 3.17969 18.6328L9.83594 11.9766L16.4805 18.6328C17.0078 19.1484 17.9102 19.1602 18.4375 18.6211C18.9648 18.082 18.9766 17.1914 18.4492 16.6641L11.793 10.0078L18.4492 3.36328C18.9766 2.83594 18.9766 1.93359 18.4375 1.40625C17.8984 0.878906 17.0078 0.878906 16.4805 1.39453L9.83594 8.05078L3.17969 1.39453C2.66406 0.890625 1.75 0.867188 1.22266 1.40625C0.695312 1.94531 0.707031 2.84766 1.21094 3.35156L7.86719 10.0078L1.21094 16.6641Z"
-								fill="#3186EE" />
-						</svg>
-					</button>
-					<li class="catalog__item">
-						<a data-submenu-id="submenu1" class="catalog__item-title" href="#">
-							Плитка
-							<img src="img/a-r.svg" alt="">
-						</a>
-						<ul class="subcatalog" id="submenu1">
-							<li><a class="subcatalog__title" href="#">Вся плитка</a></li>
-							<div class="subcatalog__body">
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Помещение</li>
-									<li><a class="subcatalog__link" href="#">Для ванной</a></li>
-									<li><a class="subcatalog__link" href="#">Для гостинной</a></li>
-									<li><a class="subcatalog__link" href="#">Для прихожей</a></li>
-									<li><a class="subcatalog__link" href="#">Для кухни</a></li>
-									<li><a class="subcatalog__link" href="#">Для общественных мест</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Размер</li>
-									<li><a class="subcatalog__link" href="#">20 х 20 см</a></li>
-									<li><a class="subcatalog__link" href="#">40 х 60 см</a></li>
-									<li><a class="subcatalog__link" href="#">60 х 60 см</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Дизайн</li>
-									<li><a class="subcatalog__link" href="#">Под мрамор</a></li>
-									<li><a class="subcatalog__link" href="#">Под дерево</a></li>
-									<li><a class="subcatalog__link" href="#">Под камень</a></li>
-									<li><a class="subcatalog__link" href="#">Под кирпич</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Назначение</li>
-									<li><a class="subcatalog__link" href="#">Для пола</a></li>
-									<li><a class="subcatalog__link" href="#">Для стен</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Тип</li>
-									<li><a class="subcatalog__link" href="#">Керамогранит</a></li>
-									<li><a class="subcatalog__link" href="#">Керамическая плитка</a></li>
-									<li><a class="subcatalog__link" href="#">Мозаика</a></li>
-									<li><a class="subcatalog__link" href="#">Клинкер</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Сопутствующие товары</li>
-									<li><a class="subcatalog__link" href="#">Клей и затирка</a></li>
-									<li><a class="subcatalog__link" href="#">Теплый пол</a></li>
-									<li><a class="subcatalog__link" href="#">Люки под плитку</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Цвет</li>
-									<li><a class="subcatalog__link" href="#">Белая</a></li>
-									<li><a class="subcatalog__link" href="#">Цветная</a></li>
-								</div>
-							</div>
-						</ul>
-					</li>
-					<li class="catalog__item">
-						<a class="catalog__item-title" href="#">Керамогранит
-							<img src="img/a-r.svg" alt="">
-						</a>
-					</li>
-					<li class="catalog__item">
-						<a data-submenu-id="submenu2" class="catalog__item-title" href="#">Мозаика
-							<img src="img/a-r.svg" alt="">
-						</a>
-						<ul id="submenu2" class="subcatalog">
-							<li><a class="subcatalog__title" href="#">Вся плитка</a></li>
-							<div class="subcatalog__body">
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Помещение</li>
-									<li><a class="subcatalog__link" href="#">Для ванной</a></li>
-									<li><a class="subcatalog__link" href="#">Для гостинной</a></li>
-									<li><a class="subcatalog__link" href="#">Для прихожей</a></li>
-									<li><a class="subcatalog__link" href="#">Для кухни</a></li>
-									<li><a class="subcatalog__link" href="#">Для общественных мест</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Размер</li>
-									<li><a class="subcatalog__link" href="#">20 х 20 см</a></li>
-									<li><a class="subcatalog__link" href="#">40 х 60 см</a></li>
-									<li><a class="subcatalog__link" href="#">60 х 60 см</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Дизайн</li>
-									<li><a class="subcatalog__link" href="#">Под мрамор</a></li>
-									<li><a class="subcatalog__link" href="#">Под дерево</a></li>
-									<li><a class="subcatalog__link" href="#">Под камень</a></li>
-									<li><a class="subcatalog__link" href="#">Под кирпич</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Назначение</li>
-									<li><a class="subcatalog__link" href="#">Для пола</a></li>
-									<li><a class="subcatalog__link" href="#">Для стен</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Тип</li>
-									<li><a class="subcatalog__link" href="#">Керамогранит</a></li>
-									<li><a class="subcatalog__link" href="#">Керамическая плитка</a></li>
-									<li><a class="subcatalog__link" href="#">Мозаика</a></li>
-									<li><a class="subcatalog__link" href="#">Клинкер</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Сопутствующие товары</li>
-									<li><a class="subcatalog__link" href="#">Клей и затирка</a></li>
-									<li><a class="subcatalog__link" href="#">Теплый пол</a></li>
-									<li><a class="subcatalog__link" href="#">Люки под плитку</a></li>
-								</div>
-								<div class="subcatalog__section">
-									<li class="subcatalog__section-title">Цвет</li>
-									<li><a class="subcatalog__link" href="#">Белая</a></li>
-									<li><a class="subcatalog__link" href="#">Цветная</a></li>
-								</div>
-							</div>
-						</ul>
-					</li>
-					<li class="catalog__item">
-						<a class="catalog__item-title" href="#">Ступени
-							<img src="img/a-r.svg" alt="">
-						</a>
-					</li>
-					<li class="catalog__item">
-						<a class="catalog__item-title" href="#">Крупный формат
-							<img src="img/a-r.svg" alt="">
-						</a>
-					</li>
-					<span class="catalog__hr"></span>
-					<li class="catalog__item">
-						<a class="catalog__item-icon" href="#">
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M1.3214 11.6488C0.694106 11.0378 0.454039 10.1715 0.50708 9.12111C0.560325 8.06666 0.908441 6.88486 1.38804 5.73907C1.86551 4.59839 2.46111 3.52196 2.98416 2.68606C3.51836 1.83236 3.94752 1.27643 4.08486 1.14463C4.08114 1.1482 4.0791 1.15002 4.07929 1.15028C4.08009 1.15142 4.12416 1.12213 4.2567 1.07987C4.39942 1.03436 4.59428 0.989026 4.83829 0.945509C5.32485 0.858737 5.9594 0.787357 6.66352 0.728452C8.06945 0.610835 9.70524 0.546649 10.8921 0.501221C11.5964 0.474259 12.3156 0.899004 12.6625 1.52902C13.2392 2.57637 13.9962 4.01547 14.5874 5.28458C14.8836 5.92029 15.1336 6.50365 15.2986 6.96945C15.3813 7.20293 15.439 7.39646 15.4713 7.5463C15.4993 7.67634 15.5001 7.73839 15.5003 7.75368C15.5003 7.75801 15.5004 7.7586 15.5009 7.75592C15.4859 7.82741 15.4189 8.02569 15.2804 8.34645C15.1476 8.65381 14.9624 9.04353 14.7317 9.48291C14.2698 10.3627 13.6326 11.4274 12.8803 12.4183C12.1244 13.4138 11.2719 14.3086 10.3854 14.8755C9.50308 15.4397 8.63869 15.6495 7.80449 15.3886C7.23638 15.2109 5.85024 14.5069 4.44733 13.7024C3.75608 13.3059 3.07702 12.8945 2.51438 12.5267C1.94066 12.1517 1.5204 11.8427 1.3214 11.6488Z"
-									stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-								<circle cx="2.01963" cy="2.01963" r="1.51963"
-									transform="matrix(0.866025 0.5 0.5 -0.866025 6.66833 5.8125)" stroke="white" />
-								<rect x="3.48267" y="8.63672" width="6.73328" height="1.34642" rx="0.673209"
-									transform="rotate(30 3.48267 8.63672)" fill="white" />
-							</svg>
-							Новинки
-						</a>
-					</li>
-					<li class="catalog__item">
-						<a class="catalog__item-icon" href="#">
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M5.53739 10.4633C5.26537 10.1913 5.26537 9.75026 5.53739 9.47824L9.47763 5.538C9.74965 5.26598 10.1907 5.26598 10.4627 5.538C10.7347 5.81001 10.7347 6.25104 10.4627 6.52306L6.52245 10.4633C6.25043 10.7353 5.8094 10.7353 5.53739 10.4633Z"
-									fill="white" />
-								<path d="M10 6L6 10M6 6V6.66667M10 9.33333V10" stroke="white" stroke-linecap="round"
+		<div class="container">
+			<nav class="catalog">
+				<ul class="catalog__list">
+					<div class="container catalog__list-wrapper">
+						<button class="catalog__breadcrumbs">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+								<path d="M11.25 15.5L6.25 10.5L11.25 5.5" stroke="#1C2F47" stroke-width="1.5" stroke-linecap="round"
 									stroke-linejoin="round" />
-								<path
-									d="M6.79386 1.2651C7.39954 0.466319 8.60038 0.466319 9.20606 1.2651L9.9625 2.26272C10.1277 2.48065 10.3977 2.59247 10.6686 2.55521L11.909 2.38468C12.9021 2.24813 13.7512 3.09725 13.6146 4.09036L13.4441 5.33067C13.4068 5.60161 13.5187 5.87156 13.7366 6.0368L14.7342 6.79325C15.533 7.39893 15.533 8.59977 14.7342 9.20545L13.7366 9.96189C13.5187 10.1271 13.4068 10.3971 13.4441 10.668L13.6146 11.9083C13.7512 12.9014 12.9021 13.7506 11.909 13.614L10.6686 13.4435C10.3977 13.4062 10.1277 13.5181 9.9625 13.736L9.20606 14.7336C8.60038 15.5324 7.39954 15.5324 6.79386 14.7336L6.03741 13.736C5.87217 13.5181 5.60222 13.4062 5.33128 13.4435L4.09097 13.614C3.09786 13.7506 2.24874 12.9014 2.38529 11.9083L2.55583 10.668C2.59308 10.3971 2.48126 10.1271 2.26333 9.96189L1.26571 9.20545C0.46693 8.59977 0.46693 7.39893 1.26571 6.79325L2.26334 6.0368C2.48126 5.87156 2.59308 5.60161 2.55583 5.33067L2.38529 4.09036C2.24874 3.09725 3.09786 2.24813 4.09097 2.38468L5.33128 2.55521C5.60222 2.59247 5.87217 2.48065 6.03741 2.26272L6.79386 1.2651Z"
-									stroke="white" />
 							</svg>
-							Распродажа
-						</a>
-					</li>
-					<li class="catalog__item">
-						<a class="catalog__item-icon" href="#">
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<ellipse cx="6.73688" cy="14.6768" rx="1.32331" ry="1.32331" fill="white" />
-								<ellipse cx="11.1479" cy="14.6768" rx="1.32331" ry="1.32331" fill="white" />
+							<span class="catalog__breadcrumbs-title"></span>
+						</button>
+						<button class="close" id="close-catalog">
+							<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
-									d="M0.761963 0.761719C2.10269 1.43208 2.76698 2.01812 2.76698 3.64894M2.76698 3.64894C2.76698 10.2655 4.53139 11.5888 8.94242 11.5888C13.3534 11.5888 15.1179 10.2655 15.1179 4.97225C15.1179 4.22939 14.6768 3.64894 13.7945 3.64894C12.9123 3.64894 5.70552 3.64894 2.76698 3.64894Z"
-									stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+									d="M1.21094 16.6641C0.707031 17.1797 0.683594 18.0938 1.22266 18.6211C1.76172 19.1484 2.66406 19.1367 3.17969 18.6328L9.83594 11.9766L16.4805 18.6328C17.0078 19.1484 17.9102 19.1602 18.4375 18.6211C18.9648 18.082 18.9766 17.1914 18.4492 16.6641L11.793 10.0078L18.4492 3.36328C18.9766 2.83594 18.9766 1.93359 18.4375 1.40625C17.8984 0.878906 17.0078 0.878906 16.4805 1.39453L9.83594 8.05078L3.17969 1.39453C2.66406 0.890625 1.75 0.867188 1.22266 1.40625C0.695312 1.94531 0.707031 2.84766 1.21094 3.35156L7.86719 10.0078L1.21094 16.6641Z"
+									fill="#3186EE" />
 							</svg>
-							Скидки и акции
-						</a>
-					</li>
-				</div>
-			</ul>
-		</nav>
+						</button>
+						<li class="catalog__item">
+							<a data-submenu-id="submenu1" class="catalog__item-title" href="#">
+								Плитка
+								<img src="img/a-r.svg" alt="">
+							</a>
+							<ul class="subcatalog" id="submenu1">
+								<li><a class="subcatalog__title" href="#">Вся плитка</a></li>
+								<div class="subcatalog__body">
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Помещение</li>
+										<li><a class="subcatalog__link" href="#">Для ванной</a></li>
+										<li><a class="subcatalog__link" href="#">Для гостинной</a></li>
+										<li><a class="subcatalog__link" href="#">Для прихожей</a></li>
+										<li><a class="subcatalog__link" href="#">Для кухни</a></li>
+										<li><a class="subcatalog__link" href="#">Для общественных мест</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Размер</li>
+										<li><a class="subcatalog__link" href="#">20 х 20 см</a></li>
+										<li><a class="subcatalog__link" href="#">40 х 60 см</a></li>
+										<li><a class="subcatalog__link" href="#">60 х 60 см</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Дизайн</li>
+										<li><a class="subcatalog__link" href="#">Под мрамор</a></li>
+										<li><a class="subcatalog__link" href="#">Под дерево</a></li>
+										<li><a class="subcatalog__link" href="#">Под камень</a></li>
+										<li><a class="subcatalog__link" href="#">Под кирпич</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Назначение</li>
+										<li><a class="subcatalog__link" href="#">Для пола</a></li>
+										<li><a class="subcatalog__link" href="#">Для стен</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Тип</li>
+										<li><a class="subcatalog__link" href="#">Керамогранит</a></li>
+										<li><a class="subcatalog__link" href="#">Керамическая плитка</a></li>
+										<li><a class="subcatalog__link" href="#">Мозаика</a></li>
+										<li><a class="subcatalog__link" href="#">Клинкер</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Сопутствующие товары</li>
+										<li><a class="subcatalog__link" href="#">Клей и затирка</a></li>
+										<li><a class="subcatalog__link" href="#">Теплый пол</a></li>
+										<li><a class="subcatalog__link" href="#">Люки под плитку</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Цвет</li>
+										<li><a class="subcatalog__link" href="#">Белая</a></li>
+										<li><a class="subcatalog__link" href="#">Цветная</a></li>
+									</div>
+								</div>
+							</ul>
+						</li>
+						<li class="catalog__item">
+							<a class="catalog__item-title" href="#">Керамогранит
+								<img src="img/a-r.svg" alt="">
+							</a>
+						</li>
+						<li class="catalog__item">
+							<a data-submenu-id="submenu2" class="catalog__item-title" href="#">Мозаика
+								<img src="img/a-r.svg" alt="">
+							</a>
+							<ul id="submenu2" class="subcatalog">
+								<li><a class="subcatalog__title" href="#">Вся плитка</a></li>
+								<div class="subcatalog__body">
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Помещение</li>
+										<li><a class="subcatalog__link" href="#">Для ванной</a></li>
+										<li><a class="subcatalog__link" href="#">Для гостинной</a></li>
+										<li><a class="subcatalog__link" href="#">Для прихожей</a></li>
+										<li><a class="subcatalog__link" href="#">Для кухни</a></li>
+										<li><a class="subcatalog__link" href="#">Для общественных мест</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Размер</li>
+										<li><a class="subcatalog__link" href="#">20 х 20 см</a></li>
+										<li><a class="subcatalog__link" href="#">40 х 60 см</a></li>
+										<li><a class="subcatalog__link" href="#">60 х 60 см</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Дизайн</li>
+										<li><a class="subcatalog__link" href="#">Под мрамор</a></li>
+										<li><a class="subcatalog__link" href="#">Под дерево</a></li>
+										<li><a class="subcatalog__link" href="#">Под камень</a></li>
+										<li><a class="subcatalog__link" href="#">Под кирпич</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Назначение</li>
+										<li><a class="subcatalog__link" href="#">Для пола</a></li>
+										<li><a class="subcatalog__link" href="#">Для стен</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Тип</li>
+										<li><a class="subcatalog__link" href="#">Керамогранит</a></li>
+										<li><a class="subcatalog__link" href="#">Керамическая плитка</a></li>
+										<li><a class="subcatalog__link" href="#">Мозаика</a></li>
+										<li><a class="subcatalog__link" href="#">Клинкер</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Сопутствующие товары</li>
+										<li><a class="subcatalog__link" href="#">Клей и затирка</a></li>
+										<li><a class="subcatalog__link" href="#">Теплый пол</a></li>
+										<li><a class="subcatalog__link" href="#">Люки под плитку</a></li>
+									</div>
+									<div class="subcatalog__section">
+										<li class="subcatalog__section-title">Цвет</li>
+										<li><a class="subcatalog__link" href="#">Белая</a></li>
+										<li><a class="subcatalog__link" href="#">Цветная</a></li>
+									</div>
+								</div>
+							</ul>
+						</li>
+						<li class="catalog__item">
+							<a class="catalog__item-title" href="#">Ступени
+								<img src="img/a-r.svg" alt="">
+							</a>
+						</li>
+						<li class="catalog__item">
+							<a class="catalog__item-title" href="#">Крупный формат
+								<img src="img/a-r.svg" alt="">
+							</a>
+						</li>
+						<span class="catalog__hr"></span>
+						<li class="catalog__item">
+							<a class="catalog__item-icon" href="#">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1.3214 11.6488C0.694106 11.0378 0.454039 10.1715 0.50708 9.12111C0.560325 8.06666 0.908441 6.88486 1.38804 5.73907C1.86551 4.59839 2.46111 3.52196 2.98416 2.68606C3.51836 1.83236 3.94752 1.27643 4.08486 1.14463C4.08114 1.1482 4.0791 1.15002 4.07929 1.15028C4.08009 1.15142 4.12416 1.12213 4.2567 1.07987C4.39942 1.03436 4.59428 0.989026 4.83829 0.945509C5.32485 0.858737 5.9594 0.787357 6.66352 0.728452C8.06945 0.610835 9.70524 0.546649 10.8921 0.501221C11.5964 0.474259 12.3156 0.899004 12.6625 1.52902C13.2392 2.57637 13.9962 4.01547 14.5874 5.28458C14.8836 5.92029 15.1336 6.50365 15.2986 6.96945C15.3813 7.20293 15.439 7.39646 15.4713 7.5463C15.4993 7.67634 15.5001 7.73839 15.5003 7.75368C15.5003 7.75801 15.5004 7.7586 15.5009 7.75592C15.4859 7.82741 15.4189 8.02569 15.2804 8.34645C15.1476 8.65381 14.9624 9.04353 14.7317 9.48291C14.2698 10.3627 13.6326 11.4274 12.8803 12.4183C12.1244 13.4138 11.2719 14.3086 10.3854 14.8755C9.50308 15.4397 8.63869 15.6495 7.80449 15.3886C7.23638 15.2109 5.85024 14.5069 4.44733 13.7024C3.75608 13.3059 3.07702 12.8945 2.51438 12.5267C1.94066 12.1517 1.5204 11.8427 1.3214 11.6488Z"
+										stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+									<circle cx="2.01963" cy="2.01963" r="1.51963"
+										transform="matrix(0.866025 0.5 0.5 -0.866025 6.66833 5.8125)" stroke="white" />
+									<rect x="3.48267" y="8.63672" width="6.73328" height="1.34642" rx="0.673209"
+										transform="rotate(30 3.48267 8.63672)" fill="white" />
+								</svg>
+								Новинки
+							</a>
+						</li>
+						<li class="catalog__item">
+							<a class="catalog__item-icon" href="#">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M5.53739 10.4633C5.26537 10.1913 5.26537 9.75026 5.53739 9.47824L9.47763 5.538C9.74965 5.26598 10.1907 5.26598 10.4627 5.538C10.7347 5.81001 10.7347 6.25104 10.4627 6.52306L6.52245 10.4633C6.25043 10.7353 5.8094 10.7353 5.53739 10.4633Z"
+										fill="white" />
+									<path d="M10 6L6 10M6 6V6.66667M10 9.33333V10" stroke="white" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M6.79386 1.2651C7.39954 0.466319 8.60038 0.466319 9.20606 1.2651L9.9625 2.26272C10.1277 2.48065 10.3977 2.59247 10.6686 2.55521L11.909 2.38468C12.9021 2.24813 13.7512 3.09725 13.6146 4.09036L13.4441 5.33067C13.4068 5.60161 13.5187 5.87156 13.7366 6.0368L14.7342 6.79325C15.533 7.39893 15.533 8.59977 14.7342 9.20545L13.7366 9.96189C13.5187 10.1271 13.4068 10.3971 13.4441 10.668L13.6146 11.9083C13.7512 12.9014 12.9021 13.7506 11.909 13.614L10.6686 13.4435C10.3977 13.4062 10.1277 13.5181 9.9625 13.736L9.20606 14.7336C8.60038 15.5324 7.39954 15.5324 6.79386 14.7336L6.03741 13.736C5.87217 13.5181 5.60222 13.4062 5.33128 13.4435L4.09097 13.614C3.09786 13.7506 2.24874 12.9014 2.38529 11.9083L2.55583 10.668C2.59308 10.3971 2.48126 10.1271 2.26333 9.96189L1.26571 9.20545C0.46693 8.59977 0.46693 7.39893 1.26571 6.79325L2.26334 6.0368C2.48126 5.87156 2.59308 5.60161 2.55583 5.33067L2.38529 4.09036C2.24874 3.09725 3.09786 2.24813 4.09097 2.38468L5.33128 2.55521C5.60222 2.59247 5.87217 2.48065 6.03741 2.26272L6.79386 1.2651Z"
+										stroke="white" />
+								</svg>
+								Распродажа
+							</a>
+						</li>
+						<li class="catalog__item">
+							<a class="catalog__item-icon" href="#">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<ellipse cx="6.73688" cy="14.6768" rx="1.32331" ry="1.32331" fill="white" />
+									<ellipse cx="11.1479" cy="14.6768" rx="1.32331" ry="1.32331" fill="white" />
+									<path
+										d="M0.761963 0.761719C2.10269 1.43208 2.76698 2.01812 2.76698 3.64894M2.76698 3.64894C2.76698 10.2655 4.53139 11.5888 8.94242 11.5888C13.3534 11.5888 15.1179 10.2655 15.1179 4.97225C15.1179 4.22939 14.6768 3.64894 13.7945 3.64894C12.9123 3.64894 5.70552 3.64894 2.76698 3.64894Z"
+										stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								Скидки и акции
+							</a>
+						</li>
+					</div>
+				</ul>
+			</nav>
+		</div>
 
 
 	</header>
@@ -402,6 +411,10 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide banner-slider__slide">
 						<div class="banner__img_white banner__img"></div>
+						<div class="banner__content">
+							<div class="banner__txt">Весь ассортимент и доступные цены в нашем магазине</div>
+							<a href="#" class="banner__btn">Перейти в каталог</a>
+						</div>
 					</div>
 					<div class="swiper-slide banner-slider__slide">
 						<div class="banner__img_red banner__img"></div>
