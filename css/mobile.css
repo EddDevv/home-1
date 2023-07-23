@@ -145,7 +145,7 @@
   }
   .subcatalog {
     width: 100%;
-    z-index: 250;
+    z-index: 1000 !important;
   }
   .header__top-list, .subcatalog {
     transform: translateX(-100%);
@@ -163,14 +163,10 @@
     flex: 0 1 100%;
     margin-top: 24px;
   }
-  .catalog__list-wrapper.container {
-    max-width: none;
-    padding: 0;
-    padding-top: 40px;
-  }
+
   .catalog__list {
     width: 100%;
-    min-height: 100%;
+    min-height: 600px;
     background: transparent;
   }
   .catalog__item-title {
@@ -202,7 +198,7 @@
   } 
 
   .subcatalog_active {
-    margin-top: 70px !important;
+    margin-top: 50px !important;
   }
   
 
@@ -346,6 +342,11 @@
 
   .brands__list {
     align-items: center;
+  }
+
+  .catalog__list-wrapper {
+    width: 100%;
+    background-color: var(--color-background);
   }
 
   .btn-outline {

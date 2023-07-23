@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Дом плитки</title>
 	<meta name="description" content="разнообразные плиточные продукты от популярных брендов">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/mobile.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="preload" href="css/reset.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="css/mobile.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+	</noscript>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 	<link type="image/x-icon" href="/img/logo.ico" rel="shortcut icon">
 </head>
 
@@ -26,13 +31,13 @@
 						</svg>
 					</div>
 					<ul class="header__top-list">
-						<button class="close" id="close-menu">
+						<div class="close" id="close-menu">
 							<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M1.21094 16.6641C0.707031 17.1797 0.683594 18.0938 1.22266 18.6211C1.76172 19.1484 2.66406 19.1367 3.17969 18.6328L9.83594 11.9766L16.4805 18.6328C17.0078 19.1484 17.9102 19.1602 18.4375 18.6211C18.9648 18.082 18.9766 17.1914 18.4492 16.6641L11.793 10.0078L18.4492 3.36328C18.9766 2.83594 18.9766 1.93359 18.4375 1.40625C17.8984 0.878906 17.0078 0.878906 16.4805 1.39453L9.83594 8.05078L3.17969 1.39453C2.66406 0.890625 1.75 0.867188 1.22266 1.40625C0.695312 1.94531 0.707031 2.84766 1.21094 3.35156L7.86719 10.0078L1.21094 16.6641Z"
 									fill="#3186EE" />
 							</svg>
-						</button>
+						</div>
 						<li class="header__top-item"><a href="#" class="header__top-link">Каталог</a></li>
 						<li class="header__top-item"><a href="#" class="header__top-link">Доставка</a></li>
 						<li class="header__top-item"><a href="#" class="header__top-link">Оплата</a></li>
@@ -213,10 +218,10 @@
 			</div>
 		</nav>
 
-		<div class="container">
+		<div class="container-menu">
 			<nav class="catalog">
 				<ul class="catalog__list">
-					<div class="container catalog__list-wrapper">
+					<div class="catalog__list-wrapper">
 						<button class="catalog__breadcrumbs">
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
 								<path d="M11.25 15.5L6.25 10.5L11.25 5.5" stroke="#1C2F47" stroke-width="1.5" stroke-linecap="round"
@@ -464,7 +469,7 @@
 				<div class="swiper collection__slider">
 					<div class="swiper-wrapper collection__slider-wrapper">
 						<div class="swiper-slide collection__slider-slide">
-							<img class="collection__slider-img" src="img/collection/1.jpg" alt="for the kitchen" />
+							<img class="collection__slider-img" src="img/collection/1.jpg" alt="for the kitchen">
 							<div class="collection__content">
 								<div class="collection__category">
 									Для кухни
@@ -486,7 +491,7 @@
 							</div>
 						</div>
 						<div class="swiper-slide collection__slider-slide">
-							<img class="collection__slider-img" src="img/collection/2.jpg" alt="for living room" />
+							<img class="collection__slider-img" src="img/collection/2.jpg" alt="for living room">
 							<div class="collection__content">
 								<div class="collection__category">
 									Для гостиной
@@ -508,7 +513,7 @@
 							</div>
 						</div>
 						<div class="swiper-slide collection__slider-slide">
-							<img class="collection__slider-img" src="img/collection/1.jpg" alt="for the kitchen" />
+							<img class="collection__slider-img" src="img/collection/1.jpg" alt="for the kitchen">
 							<div class="collection__content">
 								<div class="collection__category">
 									Для улицы
@@ -530,7 +535,7 @@
 							</div>
 						</div>
 						<div class="swiper-slide collection__slider-slide">
-							<img class="collection__slider-img" src="img/collection/2.jpg" alt="for living room" />
+							<img class="collection__slider-img" src="img/collection/2.jpg" alt="for living room">
 							<div class="collection__content">
 								<div class="collection__category">
 									Для кухни
@@ -552,7 +557,7 @@
 							</div>
 						</div>
 						<div class="swiper-slide collection__slider-slide">
-							<img class="collection__slider-img" src="img/collection/1.jpg" alt="for the kitchen" />
+							<img class="collection__slider-img" src="img/collection/1.jpg" alt="for the kitchen">
 							<div class="collection__content">
 								<div class="collection__category">
 									Для улицы
@@ -599,7 +604,8 @@
 					</div>
 					<div class="about__right">
 						<p class="txt">
-							Дом плитки – это один из наилучших вариантов для отделки помещений. Наша плитка обладает достойным внешним
+							Дом плитки – это один из наилучших вариантов для отделки помещений. Наша плитка обладает достойным
+							внешним
 							видом, низкой стоимостью
 							и безопасностью для здоровья человека. Благодаря всему этому плитка является востребованной во всех
 							современных домах
@@ -608,7 +614,8 @@
 						</p>
 						<p class="txt txt_mt">
 							В интернет-магазине Вам доступен огромный ассортимент коллекций керамической плитки
-							и керамогранита таких известных фабрик как: <span class="txt_blue">APE, Kerama marazzi, Porcelanosa, Fap,
+							и керамогранита таких известных фабрик как: <span class="txt_blue">APE, Kerama marazzi, Porcelanosa,
+								Fap,
 								Italon,
 								Aparici</span> и
 							многих
@@ -730,19 +737,19 @@
 		<div class="container">
 			<span class="section__title">Новости</span>
 			<div class="news__body">
-				<div href="#" class="news__item">
+				<div class="news__item">
 					<img class="news__img" src="img/news/1.jpg" alt="image news">
 					<span class="news__time">03.05.2023</span>
 					<h3 class="news__title">Преимущества клинкерной плитки</h3>
 					<a href="#" class="news__read">Читать полностью</a>
 				</div>
-				<div href="#" class="news__item">
+				<div class="news__item">
 					<img class="news__img news__img_shadow" src="img/brands/1.svg" alt="image news">
 					<span class="news__time">02.05.2023</span>
 					<h3 class="news__title">Скидка 25% на плитку фабрики Atlas Concorde</h3>
 					<a href="#" class="news__read">Читать полностью</a>
 				</div>
-				<div href="#" class="news__item">
+				<div class="news__item">
 					<img class="news__img" src="img/news/1.jpg" alt="image news">
 					<span class="news__time">01.05.2023</span>
 					<h3 class="news__title">Достоинства керамической плитки</h3>
